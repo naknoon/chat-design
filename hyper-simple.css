@@ -1,0 +1,79 @@
+/* 초심플 채팅 테마 240102 by Naknoon */
+
+@charset "utf-8";
+
+:root {
+    --fontName: Pretendard; /* 폰트 변경 시 변경할 폰트명을 입력 */
+    --fontWeight: 700; /* 텍스트 두께 변경 시 숫자 입력 (normal 400 · bold 700)*/
+}
+
+:root {
+    --twitchColor: #9146ff;
+    --chzzkColor: #00ffa3;
+    --youtubeColor: #ff0000;
+    --afreecaColor: #0545b1;
+}
+
+body {
+    background-color: transparent;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+html,
+body,
+#log {
+    overflow: hidden;
+}
+
+#log {
+    font: var(--fontWeight) 35px var(--fontName);
+    text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+}
+
+#log > div {
+    width: fit-content;
+    background: rgba(0 0 0 / 50%);
+    padding: 0.4em;
+    margin-bottom: 0.2em;
+    display: flex;
+    position: relative;
+    border-left: 10px solid;
+    border-radius: 0 0.25em 0.25em 0;
+}
+
+#log > div.chzzk {
+    border-left-color: var(--chzzkColor);
+}
+
+#log > div.twitch {
+    border-left-color: var(--twitchColor);
+}
+
+#log > div.youtube {
+    border-left-color: var(--youtubeColor);
+}
+
+#log > div.afreeca {
+    border-left-color: var(--afreecaColor);
+}
+
+#log .meta {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 0;
+}
+
+#log .meta img:last-of-type {
+    margin-right: 10px;
+}
+
+#log .message {
+    line-height: 1;
+}
+
+#log .name,
+#log .colon {
+    height: initial;
+    display: none;
+}
