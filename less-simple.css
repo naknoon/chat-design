@@ -3,7 +3,7 @@
 @charset "utf-8";
 
 :root {
-    --fontName: Pretendard; /* 폰트 변경 시 변경할 폰트명을 입력 */
+    --fontName: Pretendard; /* (수정 권장하지 않음) 폰트 변경 시 변경할 폰트명을 입력 */
     --fontWeight: 700; /* 텍스트 두께 변경 시 숫자 입력 (normal 400 · bold 700)*/
     --nameWeight: 700; /* 닉네임 두께 변경 시 숫자 입력 */
 }
