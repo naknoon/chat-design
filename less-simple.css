@@ -63,12 +63,8 @@ body,
 
 #log .meta {
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
-}
-
-#log .message {
-    line-height: 1;
 }
 
 #log .colon {
@@ -80,9 +76,4 @@ body,
     height: auto;
     font: var(--nameWeight) 35px var(--fontName);
     margin: 0;
-}
-
-#log .colon,
-#log .name {
-    line-height: 1;
 }

@@ -60,16 +60,13 @@ body,
 
 #log .meta {
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
+    height: 1.2em;
 }
 
 #log .meta img:last-of-type {
     margin-right: 10px;
-}
-
-#log .message {
-    line-height: 1;
 }
 
 #log .name,
