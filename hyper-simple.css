@@ -1,11 +1,4 @@
-/* 초심플 채팅 테마 240102 by Naknoon */
-
-@charset "utf-8";
-
-:root {
-    --fontName: Pretendard; /* (수정 권장하지 않음) 폰트 변경 시 변경할 폰트명을 입력 */
-    --fontWeight: 700; /* 텍스트 두께 변경 시 숫자 입력 (normal 400 · bold 700)*/
-}
+/* 초심플 채팅 테마 240104 by Naknoon */
 
 :root {
     --twitchColor: #9146ff;
@@ -27,50 +20,79 @@ body,
 }
 
 #log {
-    font: var(--fontWeight) 35px var(--fontName);
-    text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+    position: absolute; /* 끌어오기 */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 1em 1em 1em;
 }
 
 #log > div {
     width: fit-content;
-    background: rgba(0 0 0 / 50%);
+    background-color: rgba(0 0 0 / 50%);
     padding: 0.4em;
-    margin-bottom: 0.2em;
+    margin-top: 0.2em;
     display: flex;
     position: relative;
     border-left: 10px solid;
-    border-radius: 0 0.25em 0.25em 0;
+    border-radius: 0 0.3em 0.3em 0;
+}
+
+#log > div:not(.donation) {
+    padding: 0.4em;
 }
 
 #log > div.chzzk {
-    border-left-color: var(--chzzkColor);
+    border-color: var(--chzzkColor);
 }
 
 #log > div.twitch {
-    border-left-color: var(--twitchColor);
+    border-color: var(--twitchColor);
 }
 
 #log > div.youtube {
-    border-left-color: var(--youtubeColor);
+    border-color: var(--youtubeColor);
 }
 
 #log > div.afreeca {
-    border-left-color: var(--afreecaColor);
+    border-color: var(--afreecaColor);
 }
 
-#log .meta {
+#log > div.deleted {
+    visibility: hidden;
+}
+
+.meta {
     display: inline-flex;
+    justify-content: flex-start;
     align-items: center;
+    gap: 0.2em;
     padding: 0;
-    height: 1.2em;
+    height: 1lh;
 }
 
-#log .meta img:last-of-type {
+.badge {
+    margin: 0;
+    height: 1em;
+}
+
+.meta img:last-of-type {
     margin-right: 10px;
 }
 
-#log .name,
-#log .colon {
+.name,
+.colon {
     height: initial;
     display: none;
+}
+
+.message {
+    display: inline-block !important;
+}
+
+.emoticon {
+    vertical-align: text-top;
+    margin: 0;
+    height: 1lh;
 }
