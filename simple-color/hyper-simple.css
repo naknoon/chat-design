@@ -1,10 +1,11 @@
-/* 초심플 채팅 테마 240104 by Naknoon */
+/* 초심플 컬러 채팅 테마 240106 by Naknoon */
 
 :root {
-    --twitchColor: #9146ff;
-    --chzzkColor: #00ffa3;
-    --youtubeColor: #ff0000;
-    --afreecaColor: #0545b1;
+    --twitchColor: 72 35 128;
+    --chzzkColor: 0 128 82;
+    --youtubeColor: 128 0 0;
+    --afreecaColor: 2 34 88;
+    --streamerColor: 128 128 0;
 }
 
 body {
@@ -20,7 +21,7 @@ body,
 }
 
 #log {
-    position: absolute; /* 끌어오기 */
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -35,8 +36,7 @@ body,
     margin-top: 0.2em;
     display: flex;
     position: relative;
-    border-left: 10px solid;
-    border-radius: 0 0.3em 0.3em 0;
+    border-radius: 0.3em;
 }
 
 #log > div:not(.donation) {
@@ -44,19 +44,23 @@ body,
 }
 
 #log > div.chzzk {
-    border-color: var(--chzzkColor);
+    background: rgba(var(--chzzkColor) / 60%);
 }
 
 #log > div.twitch {
-    border-color: var(--twitchColor);
+    background-color: rgba(var(--twitchColor) / 60%);
 }
 
 #log > div.youtube {
-    border-color: var(--youtubeColor);
+    background-color: rgba(var(--youtubeColor) / 60%);
 }
 
 #log > div.afreeca {
-    border-color: var(--afreecaColor);
+    background-color: rgba(var(--afreecaColor) / 60%);
+}
+
+#log > div.streamer {
+    background-color: rgba(var(--streamerColor) / 60%);
 }
 
 #log > div.deleted {

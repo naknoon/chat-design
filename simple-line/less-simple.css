@@ -20,7 +20,7 @@ body,
 }
 
 #log {
-    position: absolute; /* 끌어오기 */
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;

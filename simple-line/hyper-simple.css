@@ -1,0 +1,98 @@
+/* 초심플 채팅 테마 240104 by Naknoon */
+
+:root {
+    --twitchColor: #9146ff;
+    --chzzkColor: #00ffa3;
+    --youtubeColor: #ff0000;
+    --afreecaColor: #0545b1;
+}
+
+body {
+    background-color: transparent;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+html,
+body,
+#log {
+    overflow: hidden;
+}
+
+#log {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 1em 1em 1em;
+}
+
+#log > div {
+    width: fit-content;
+    background-color: rgba(0 0 0 / 50%);
+    padding: 0.4em;
+    margin-top: 0.2em;
+    display: flex;
+    position: relative;
+    border-left: 10px solid;
+    border-radius: 0 0.3em 0.3em 0;
+}
+
+#log > div:not(.donation) {
+    padding: 0.4em;
+}
+
+#log > div.chzzk {
+    border-color: var(--chzzkColor);
+}
+
+#log > div.twitch {
+    border-color: var(--twitchColor);
+}
+
+#log > div.youtube {
+    border-color: var(--youtubeColor);
+}
+
+#log > div.afreeca {
+    border-color: var(--afreecaColor);
+}
+
+#log > div.deleted {
+    visibility: hidden;
+}
+
+.meta {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0;
+    height: 1lh;
+}
+
+.badge {
+    margin: 0;
+    height: 1em;
+}
+
+.meta img:last-of-type {
+    margin-right: 10px;
+}
+
+.name,
+.colon {
+    height: initial;
+    display: none;
+}
+
+.message {
+    display: inline-block !important;
+}
+
+.emoticon {
+    vertical-align: text-top;
+    margin: 0;
+    height: 1lh;
+}
