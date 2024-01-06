@@ -34,6 +34,7 @@ eb91c507bf5a9a13f69bbb5ee81077f77370ae4d56e195909712c4d1b4c41f2b
 ## 심플 컬러 시리즈 `simple-color`
 ### 초심플 `hyper-simple.css`
 ```
+c424b37bbd445315bca5e8afd345269c01877123f695db95db91ca749ad46c8f
 ```
 뱃지 이외의 다른 정보(닉네임 등)은 표시되지 않습니다.
 <br/>
