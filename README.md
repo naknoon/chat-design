@@ -42,4 +42,13 @@ c424b37bbd445315bca5e8afd345269c01877123f695db95db91ca749ad46c8f
 
 ![image](https://github.com/naknoon/chat-design/assets/53992907/0c881659-410b-44a7-9b9a-fe01f792eda3)
 
+### 덜심플 `less-simple.css`
+```
+30a978208a8eb74f1622ef7c7789fd9a2a9f5c26b3cfa88f628fda3d2be973f9
+```
+초심플 테마와 비슷하지만 닉네임이 표시됩니다.
+
+![image](https://github.com/naknoon/chat-design/assets/53992907/4ec411b9-965c-488f-9bc1-aa7cd9677304)
+
+
 
